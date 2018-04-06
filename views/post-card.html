@@ -1,0 +1,13 @@
+<div class="myCard">
+		<div class="panel panel-primary col-sm-offset-2 col-xs-12 col-sm-8" style="background-color:yellow">
+			<div class="panel-heading"> <h4>Book - {{book.name}}</h4></div>
+			<div class="panel-body"> 
+				<div>Author - <em>{{ book.authors[0] }}</em> </div>
+				<div>Pages - <em>{{ book.numberOfPages }}</em> </div>
+				<div>Publisher - <em>{{ book.publisher}}</em> </div>
+				<div>Country - <em>{{ book.country}}</em> </div>
+				<div>Realeased on - <em>{{ book.released | date : medium }}</em> </div>
+				<div>Media Type - <em>{{ book.mediaType}}</em> </div>
+			</div>
+		</div>
+	</div>
